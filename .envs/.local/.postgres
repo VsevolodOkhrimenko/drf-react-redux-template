@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=training_app
+POSTGRES_USER=UktLpAGVJKnTlCSaAWggkPSciEFPLSQj
+POSTGRES_PASSWORD=te52SnYPUwDIusb3bPF2hZq69VRWbOdDPCEuMWizQtanVeQYblHD5F3aorUB56Ot

@@ -1,0 +1,19 @@
+{$DOMAIN_NAME} {
+    reverse_proxy django:5000 {
+        header_down -X-Frame-Options
+    }
+    header {
+        -Server
+        X-XSS-Protection "1; mode=block"
+        Referrer-Policy "no-referrer-when-downgrade"
+        X-Content-Type-Options "nosniff"
+        Cache-Control "max-age=31536000"
+        Service-Worker-Allowed /
+    }
+    log {
+        output stdout
+        format single_field common_log
+        level DEBUG
+    }
+    encode gzip
+}
