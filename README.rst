@@ -2,6 +2,7 @@ Django + React custom temlate
 ============
 
 Custom templated built with:
+
 - Django
 - DRF
 - Redis
